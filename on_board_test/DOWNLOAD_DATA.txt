@@ -1,0 +1,31 @@
+==============================================================================
+                    TeLLMe Data Files Required
+==============================================================================
+
+IMPORTANT: Binary data files are NOT included in this repository due to size constraints.
+
+Download all required data files from Google Drive:
+   https://drive.google.com/drive/folders/1jrOIA7jaPUJkjDhWwoLr_jXlYaViF0vz?usp=sharing
+
+Required Data Directories:
+   - input_bin/              Input embedding data
+   - weight_bin_5/           Model weights (1.58-bit ternary quantized)
+   - kv_cache/               KV cache data (sample_1 to sample_15)
+   - rope_cache/             RoPE (Rotary Position Embedding) cache
+   - output_bin/             HLS golden output (for verification)
+   - output_bin_pytorch/     PyTorch golden output (for --use_pytorch_golden)
+
+Installation Instructions:
+   1. Visit the Google Drive link above
+   2. Download all required data folders
+   3. Extract files to match the directory structure in this folder
+   4. Verify all .bin and .dat files are in their respective directories
+
+Each data directory contains a DOWNLOAD_DATA.txt with specific instructions.
+
+For complete setup instructions, see the main README.md file.
+
+==============================================================================
+
+Note: This package includes the source code and configuration files only.
+All runtime binary data must be downloaded separately from the link above.

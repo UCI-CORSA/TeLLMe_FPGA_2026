@@ -1,0 +1,15 @@
+Required Data Files
+===================
+
+This directory requires RoPE (Rotary Position Embedding) cache binary data files for the TeLLMe accelerator.
+
+Please download the required files from:
+https://drive.google.com/drive/folders/1jrOIA7jaPUJkjDhWwoLr_jXlYaViF0vz?usp=sharing
+
+Instructions:
+1. Visit the Google Drive link above
+2. Navigate to the "rope_cache/" folder
+3. Download all files to this directory
+4. Ensure file permissions are set correctly (readable by the user)
+
+For questions or issues, please refer to the main README.md file.

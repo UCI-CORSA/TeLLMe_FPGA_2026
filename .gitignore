@@ -1,0 +1,13 @@
+*.safetensors
+*.model
+*.dat
+*.log
+*.bin
+sw/*/*.txt
+sw/*/*/*/*.txt
+syn_result/
+log/
+__pycache__/
+vivado/
+*.7z
+*.so
