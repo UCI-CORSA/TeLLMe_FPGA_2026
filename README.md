@@ -32,20 +32,6 @@ release/
 
 ---
 
-## HLS Synthesis & Implementation
-
-The `src/` directory contains production-ready HLS C/C++ source code for FPGA synthesis.
-
-**Top Function:** `top_bitnet_fuse_ele_multi_weight_port()` in `src/top_bitnet.hpp`
-
-You can synthesize and implement the design using:
-- **Script-based flow:** Use Vitis HLS scripts for automated synthesis
-- **GUI-based flow:** Import source files into Vitis HLS GUI project
-
-The synthesized IP can then be integrated into Vivado for bitstream generation.
-
----
-
 ## On-Board Chatbot Evaluation
 
 ### Environment Setup
@@ -131,6 +117,11 @@ python3 chatbot.py --interactive --bitstream bitnet1024tl_250_dram_divide5.bit \
 
 **Note:** The model responses may vary in quality as the base model is not chat-finetuned.
 
+```bash
+taskset -c 0-3 chrt -f 99 
+```
+This command is also recommended to ensure the chatbot process has real-time scheduling priority for better performance.
+
 ---
 
 ### Command-Line Arguments Reference
@@ -150,6 +141,20 @@ python3 chatbot.py --interactive --bitstream bitnet1024tl_250_dram_divide5.bit \
 | `--neon_lm_head` | flag | False | Use NEON-accelerated LM head | ✓ **Always** |
 | `--stream` | flag | False | Enable streaming output | ✓ (for interactive) |
 | `--use_pytorch_golden` | flag | False | Use PyTorch golden logits (output_bin_pytorch) | ✓ (for verification) |
+
+---
+
+## HLS Synthesis & Implementation
+
+The `src/` directory contains production-ready HLS C/C++ source code for FPGA synthesis.
+
+**Top Function:** `top_bitnet_fuse_ele_multi_weight_port()` in `src/top_bitnet.hpp`
+
+You can synthesize and implement the design using:
+- **Script-based flow:** Use Vitis HLS scripts for automated synthesis
+- **GUI-based flow:** Import source files into Vitis HLS GUI project
+
+The synthesized IP can then be integrated into Vivado for bitstream generation.
 
 ---
 
