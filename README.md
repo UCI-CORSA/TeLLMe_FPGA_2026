@@ -1,5 +1,4 @@
-# TellMe BitNet Release
-
+# TeLLMe: An Efficient End-to-End Ternary LLM Prefill and Decode Accelerator with Table-Lookup Matmul on Edge FPGAs [FPGA2026]
 
 ## Directory Structure
 
