@@ -193,14 +193,6 @@ If you use this code in your research, please cite:
   url={https://dl.acm.org/doi/10.1145/3748173.3779191}
 }
 
-@article{qiao2024tellme,
-  title={TeLLMe v2: An Efficient End-to-End Ternary LLM Prefill and Decode Accelerator with Table-Lookup Matmul on Edge FPGAs},
-  author={Qiao, Ye and Chen, Zhiheng and Zhang, Yifan and Wang, Yian and Huang, Sitao},
-  journal={arXiv preprint arXiv:2510.15926},
-  year={2024},
-  url={https://arxiv.org/abs/2510.15926}
-}
-
 @article{qiao2025tellme_energy,
   title={TeLLMe: An Energy-Efficient Ternary LLM Accelerator for Prefilling and Decoding on Edge FPGAs},
   author={Qiao, Ye and Chen, Zhiheng and Zhang, Yifan and Wang, Yian and Huang, Sitao},
